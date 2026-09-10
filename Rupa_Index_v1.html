@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Well Soon kalu</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      animation: fadeIn 3s ease-in;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 2px 2px 5px #ff69b4;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 2px 2px 5px #ff69b4; }
+      to { text-shadow: 2px 2px 20px #ff1493; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .message {
+      font-size: 1.5em;
+      color: #fff;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 40px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background: #ff69b4;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    /* Cartoon heart */
+    .heart {
+      width: 100px;
+      height: 90px;
+      background: red;
+      position: relative;
+      margin: 40px auto;
+      transform: rotate(-45deg);
+      animation: bounce 2s infinite;
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      width: 100px;
+      height: 90px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .heart:before {
+      top: -50px;
+      left: 0;
+    }
+    .heart:after {
+      left: 50px;
+      top: 0;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: rotate(-45deg) translateY(0); }
+      50% { transform: rotate(-45deg) translateY(-20px); }
+    }
+    /* Cartoon sun */
+    .sun {
+      width: 80px;
+      height: 80px;
+      background: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      box-shadow: 0 0 20px gold;
+      animation: spin 10s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    /* Waving emoji */
+    .emoji {
+      font-size: 3em;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      animation: wave 2s infinite;
+    }
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(20deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-20deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Get Well Soon, kalu 💖</h1>
+  <p class="message">Dear Rupa Chakraborty/ganguly, wishing you strength and a speedy recovery. You are cherished!</p>
+  
+  <!-- Cartoon heart -->
+  <div class="heart"></div>
+  
+  <!-- Cartoon sun -->
+  <div class="sun"></div>
+  
+  <!-- Waving emoji -->
+  <div class="emoji">😊</div>
+  
+  <button onclick="confetti()">Celebrate Recovery</button>
+
+  <script>
+    function confetti() {
+      alert("🎉 Sending love and confetti to Rupa! 🎉");
+    }
+  </script>
+</body>
+</html>
